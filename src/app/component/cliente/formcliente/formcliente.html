@@ -1,0 +1,29 @@
+<div class="container">
+    <h4>Nuevo Cliente</h4>
+    <form>
+
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label">Código</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" [(ngModel)]="codigo" name="codigo" placeholder="Código">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label">Nombre</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" [(ngModel)]="nombre" name="nombre" placeholder="Nombre">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label">Apellido</label>
+            <div class="col-sm-11">
+                <input type="text" class="form-control" [(ngModel)]="apellido" name="apellido" placeholder="Apellido">
+            </div>
+        </div> 
+    </form>
+
+    <button class="btn btn-success mt-3" (click)="guardar()">Guardar</button>
+
+    </div>

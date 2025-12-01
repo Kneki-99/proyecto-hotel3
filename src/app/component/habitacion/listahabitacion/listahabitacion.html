@@ -1,0 +1,28 @@
+<div>
+    <h4>Lista de habitaciones</h4>
+    <table class="table table-hovered table-stripped">
+        <thead>
+            <th>Id</th>
+            <th>Numero</th>
+            <th>tipo Habitación</th>
+            <th>Precio Noche</th>
+            <th>Estado</th>
+         
+        </thead>
+        <tbody>
+            @for(datos of data;track datos){
+            <tr>
+                <td>{{datos.id}}</td>
+                <th>{{datos.numero}}</th>
+                <td>{{datos.tipo}}</td>
+                <td>${{datos.precio_noche}}</td>
+                <td>{{datos.estado}}</td>
+           
+                <td>
+               
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

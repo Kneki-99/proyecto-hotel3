@@ -1,0 +1,17 @@
+<app-menu [activo]="3"></app-menu>
+<div class="container">
+    <hr>
+    @if(lista){
+    <div class="d-flex justify-content-end">
+        <button class="btn btn-success" (click)="mostrar()">Nueva Reserva</button>
+    </div>
+    <hr>
+    <app-listareservahabitacion></app-listareservahabitacion>
+    }@else{
+    <div class="d-flex justify-content-start">
+        <button class="btn btn-primary" (click)="mostrar()">Regresar</button>
+    </div>
+    <hr>
+    <app-formreservahabitacion (accionRealizada)="recargar()"></app-formreservahabitacion>
+    }
+</div>

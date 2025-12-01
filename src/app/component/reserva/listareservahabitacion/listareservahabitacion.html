@@ -1,0 +1,31 @@
+<div>
+    <h4>Lista de clientes</h4>
+    <table class="table table-hovered table-stripped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>ID Cliente</th>
+                <th>ID Habitación</th>
+                <th>Fecha Entrada</th>
+                <th>Fecha Salida</th>
+                <th>Total</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(datos of data;track datos){
+            <tr>
+                <td>{{datos.id}}</td>
+                <td>{{datos.id_cliente}}</td>
+                <td>{{datos.id_habitacion}}</td>
+                <td>{{datos.fecha_entrada}}</td>
+                <td>{{datos.fecha_salida}}</td>
+                <td>{{datos.total}}</td>
+                <td>{{datos.estado}}</td>
+                <td>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>
